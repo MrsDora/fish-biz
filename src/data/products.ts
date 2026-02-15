@@ -1,0 +1,113 @@
+export type FishCategory = "fresh" | "frozen" | "smoked" | "all";
+
+export interface FishProduct {
+  id: string;
+  name: string;
+  category: FishCategory;
+  price: number;
+  unit: string;
+  description: string;
+  longDescription: string;
+  image: string;
+  available: boolean;
+  sizes?: string[];
+}
+
+export const products: FishProduct[] = [
+  {
+    id: "atlantic-salmon",
+    name: "Atlantic Salmon",
+    category: "fresh",
+    price: 18.99,
+    unit: "per kg",
+    description: "Premium fresh Atlantic salmon, rich in omega-3 fatty acids.",
+    longDescription: "Our Atlantic Salmon is sourced daily from sustainable fisheries. Known for its buttery texture and rich flavor, it's perfect for grilling, baking, or serving as sashimi. Each fillet is hand-cut and inspected for quality.",
+    image: "https://images.unsplash.com/photo-1499125562588-29fb8a56b5d5?w=600&h=400&fit=crop",
+    available: true,
+    sizes: ["500g", "1kg", "2kg", "5kg"],
+  },
+  {
+    id: "red-snapper",
+    name: "Red Snapper",
+    category: "fresh",
+    price: 22.50,
+    unit: "per kg",
+    description: "Wild-caught red snapper with firm, sweet flesh.",
+    longDescription: "Wild-caught Red Snapper is prized for its firm texture and mildly sweet flavor. Perfect for pan-searing, grilling, or steaming. Available whole or filleted to your preference.",
+    image: "https://images.unsplash.com/photo-1534604973900-c43ab4c2e0ab?w=600&h=400&fit=crop",
+    available: true,
+    sizes: ["Whole (1-2kg)", "Fillet 500g", "Fillet 1kg"],
+  },
+  {
+    id: "mackerel",
+    name: "Fresh Mackerel",
+    category: "fresh",
+    price: 8.99,
+    unit: "per kg",
+    description: "Freshly caught mackerel, ideal for grilling.",
+    longDescription: "Our fresh mackerel is caught daily and known for its bold, rich flavor. High in omega-3s and perfect for grilling, smoking, or pan-frying. A budget-friendly option packed with nutrition.",
+    image: "https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=600&h=400&fit=crop",
+    available: true,
+    sizes: ["500g", "1kg", "3kg"],
+  },
+  {
+    id: "frozen-tilapia",
+    name: "Frozen Tilapia Fillets",
+    category: "frozen",
+    price: 12.99,
+    unit: "per kg",
+    description: "Flash-frozen tilapia fillets, ready to cook.",
+    longDescription: "Our tilapia fillets are flash-frozen at peak freshness to lock in flavor and nutrition. Mild and versatile, they're perfect for any recipe. Individually wrapped for convenience.",
+    image: "https://images.unsplash.com/photo-1510130387422-82bed34b37e9?w=600&h=400&fit=crop",
+    available: true,
+    sizes: ["500g pack", "1kg pack", "5kg bulk"],
+  },
+  {
+    id: "frozen-shrimp",
+    name: "Frozen Jumbo Shrimp",
+    category: "frozen",
+    price: 24.99,
+    unit: "per kg",
+    description: "Large peeled jumbo shrimp, flash-frozen.",
+    longDescription: "Premium jumbo shrimp, peeled and deveined for your convenience. Flash-frozen to preserve their sweet, succulent flavor. Ideal for stir-fries, pastas, and grilling.",
+    image: "https://images.unsplash.com/photo-1565680018093-ebb6b9ab3e5f?w=600&h=400&fit=crop",
+    available: true,
+    sizes: ["500g", "1kg", "2kg"],
+  },
+  {
+    id: "smoked-salmon",
+    name: "Smoked Salmon",
+    category: "smoked",
+    price: 32.00,
+    unit: "per kg",
+    description: "Traditional cold-smoked salmon slices.",
+    longDescription: "Our cold-smoked salmon is prepared using traditional methods with natural wood chips. Silky, flavorful slices perfect for bagels, salads, or charcuterie boards. No artificial preservatives.",
+    image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&h=400&fit=crop",
+    available: true,
+    sizes: ["200g", "500g", "1kg"],
+  },
+  {
+    id: "smoked-mackerel",
+    name: "Smoked Mackerel",
+    category: "smoked",
+    price: 15.99,
+    unit: "per kg",
+    description: "Hot-smoked mackerel with golden finish.",
+    longDescription: "Hot-smoked over oak wood, our mackerel has a beautiful golden color and rich, smoky flavor. Ready to eat — perfect for salads, sandwiches, or as a standalone snack.",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop",
+    available: true,
+    sizes: ["250g", "500g"],
+  },
+  {
+    id: "catfish",
+    name: "Fresh Catfish",
+    category: "fresh",
+    price: 10.50,
+    unit: "per kg",
+    description: "Farm-raised catfish, mild and tender.",
+    longDescription: "Our farm-raised catfish is mild, tender, and incredibly versatile. Perfect for frying, grilling, or baking. Available whole or in fillets, cleaned and ready to cook.",
+    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop",
+    available: false,
+    sizes: ["Whole (1-2kg)", "Fillet 500g", "Fillet 1kg"],
+  },
+];
