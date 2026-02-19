@@ -32,7 +32,7 @@ const ContactPage = () => (
             <div className="space-y-5">
               {[
                 { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
-                { icon: Mail, label: "Email", value: "orders@oceancatch.com" },
+                { icon: Mail, label: "Email", value: "orders@fishhub.com" },
                 { icon: MapPin, label: "Address", value: "123 Harbor Drive, Fisherman's Wharf, CA 94133" },
                 { icon: Clock, label: "Hours", value: "Mon–Sat: 6:00 AM – 6:00 PM\nSunday: Closed" },
               ].map((item) => (

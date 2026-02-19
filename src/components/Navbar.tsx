@@ -19,7 +19,7 @@ const Navbar = () => {
       <nav className="container mx-auto flex items-center justify-between px-4 py-3">
         <Link to="/" className="flex items-center gap-2 text-primary-foreground">
           <Fish className="h-8 w-8" />
-          <span className="font-display text-xl font-bold tracking-wide">OceanCatch</span>
+          <span className="font-display text-xl font-bold tracking-wide">FishHub</span>
         </Link>
 
         {/* Desktop nav */}
