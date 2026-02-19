@@ -19,7 +19,7 @@ const Index = () => {
       <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden">
         <img
           src={heroImage}
-          alt="Fresh fish on ice at OceanCatch fish market"
+          alt="Fresh fish on ice at FishHub fish market"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-ocean-dark/90 via-ocean-dark/70 to-transparent" />

@@ -8,7 +8,7 @@ const Footer = () => (
         <div>
           <div className="flex items-center gap-2 mb-4">
             <Fish className="h-6 w-6" />
-            <span className="font-display text-lg font-bold">OceanCatch</span>
+            <span className="font-display text-lg font-bold">FishHub</span>
           </div>
           <p className="text-primary-foreground/70 text-sm leading-relaxed">
             Premium quality fish and seafood, delivered fresh to your door. Serving households,
@@ -35,7 +35,7 @@ const Footer = () => (
             </div>
             <div className="flex items-center gap-2">
               <Mail className="h-4 w-4 shrink-0" />
-              <span>orders@oceancatch.com</span>
+              <span>orders@fishhub.com</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4 shrink-0" />
@@ -46,7 +46,7 @@ const Footer = () => (
       </div>
 
       <div className="mt-10 border-t border-primary-foreground/10 pt-6 text-center text-xs text-primary-foreground/50">
-        © {new Date().getFullYear()} OceanCatch Fish Market. All rights reserved.
+        © {new Date().getFullYear()} FishHub Fish Market. All rights reserved.
       </div>
     </div>
   </footer>
