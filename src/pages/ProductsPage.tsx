@@ -7,6 +7,7 @@ const categories: { value: FishCategory | "all"; label: string }[] = [
   { value: "fresh", label: "Fresh" },
   { value: "frozen", label: "Frozen" },
   { value: "smoked", label: "Smoked" },
+  { value: "dried", label: "Dried" },
 ];
 
 const ProductsPage = () => {

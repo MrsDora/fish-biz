@@ -1,4 +1,4 @@
-export type FishCategory = "fresh" | "frozen" | "smoked" | "all";
+export type FishCategory = "fresh" | "frozen" | "smoked" | "dried" | "all";
 
 export interface FishProduct {
   id: string;
@@ -109,5 +109,53 @@ export const products: FishProduct[] = [
     image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop",
     available: false,
     sizes: ["Whole (1-2kg)", "Fillet 500g", "Fillet 1kg"],
+  },
+  {
+    id: "dried-stockfish",
+    name: "Dried Stockfish",
+    category: "dried",
+    price: 28.99,
+    unit: "per kg",
+    description: "Traditional air-dried stockfish, perfect for soups and stews.",
+    longDescription: "Our stockfish is carefully air-dried using centuries-old methods to preserve its rich flavor and nutrients. A staple in West African and Scandinavian cuisines, it rehydrates beautifully for soups, stews, and sauces.",
+    image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=600&h=400&fit=crop",
+    available: true,
+    sizes: ["250g", "500g", "1kg"],
+  },
+  {
+    id: "dried-crayfish",
+    name: "Dried Crayfish",
+    category: "dried",
+    price: 19.99,
+    unit: "per kg",
+    description: "Ground or whole dried crayfish, a must-have seasoning.",
+    longDescription: "Our dried crayfish adds an unmistakable umami depth to any dish. Available whole or ground, it's a key ingredient in African, Asian, and Caribbean cooking. Packed with protein and flavor.",
+    image: "https://images.unsplash.com/photo-1565680018093-ebb6b9ab3e5f?w=600&h=400&fit=crop",
+    available: true,
+    sizes: ["100g", "250g", "500g", "1kg"],
+  },
+  {
+    id: "dried-catfish",
+    name: "Dried Catfish",
+    category: "dried",
+    price: 24.50,
+    unit: "per kg",
+    description: "Smoke-dried catfish with deep, rich flavor.",
+    longDescription: "Our catfish is smoke-dried to perfection, giving it a deep, rich flavor that enhances any dish. Popular in pepper soups, stews, and sauces. Ready to use after a quick soak.",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop",
+    available: true,
+    sizes: ["250g", "500g", "1kg"],
+  },
+  {
+    id: "dried-shrimp",
+    name: "Dried Shrimp",
+    category: "dried",
+    price: 16.99,
+    unit: "per kg",
+    description: "Small sun-dried shrimp, bursting with flavor.",
+    longDescription: "These sun-dried shrimp are a powerhouse of flavor. Use them whole or ground as a seasoning in soups, rice dishes, and stir-fries. A pantry essential for adding depth to everyday meals.",
+    image: "https://images.unsplash.com/photo-1510130387422-82bed34b37e9?w=600&h=400&fit=crop",
+    available: true,
+    sizes: ["100g", "250g", "500g"],
   },
 ];
